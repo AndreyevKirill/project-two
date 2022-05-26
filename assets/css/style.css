@@ -1,14 +1,8 @@
-body {
-    --font-size: 20px;
-    --primary-color: #3a79ff;
-    --btn-primary-background: #d2e1ff;
-}
-
 @font-face {
-    font-family: "Rubik";
-    src: url("/assets/fonts/Rubik-Regular.ttf") format("truetype");
+    font-family: 'Rubik';
     font-style: normal;
     font-weight: normal;
+    src: url("../fonts/Rubik-Regular.ttf") format('truetype');
 }
 
 @font-face {
@@ -24,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Rubik", "Arial", sans-serif;
 }
 
 .container {
@@ -72,7 +66,7 @@ h6 {
 }
 
 .logo__name {
-    padding-right: 149px;
+    padding-right: 162px;
     font-family: 'Rubik';
     font-style: normal;
     font-size: 20px;
@@ -81,6 +75,11 @@ h6 {
 
 .logo {
     padding-right: 10px;
+}
+
+.header img {
+    width: 35px;
+    height: 36px;
 }
 
 .menu {
@@ -94,7 +93,8 @@ h6 {
 }
 
 .menu__item:not(:last-child) {
-    padding-right: 40px;
+    padding-right: 36px;
+    letter-spacing: 0.07rem;
 }
 
 .header__right {
@@ -113,6 +113,7 @@ h6 {
 
 .title {
     font-weight: 600;
+    font-family: 'Rubik';
     font-size: 50px;
     line-height: 70px;
     color: #0B132A;
@@ -123,6 +124,7 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-right: 40px;
 }
 
 .description {
