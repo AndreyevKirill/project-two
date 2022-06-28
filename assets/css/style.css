@@ -29,23 +29,26 @@ h6 {
     margin: 0 auto;
     padding: 0px 15px;
 }
+
 .title {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
     line-height: 50px;
-	    text-align: center;
+    text-align: center;
     color: #0B132A;
 }
+
 .subtitle {
     font-size: 16px;
     line-height: 30px;
     text-align: center;
     color: #4F5665;
 }
+
 .description {
-	font-family: 'Rubik';
+    font-family: 'Rubik';
     font-size: 16px;
     line-height: 30px;
     color: #4F5665;
@@ -53,11 +56,11 @@ h6 {
 
 /*button*/
 .btn--danger {
-	font-weight: 700;
+    font-weight: 700;
     font-size: 16px;
     line-height: 25px;
-	    letter-spacing: 0.08em;
-		    height: 60px;
+    letter-spacing: 0.08em;
+    height: 60px;
     padding: 0px 76px;
     background: #F53838;
     border: transparent;
@@ -68,7 +71,7 @@ h6 {
 .btn--outline {
     height: 45px;
     letter-spacing: 0.06em;
-		    padding: 0px 43px;
+    padding: 0px 43px;
     border: 1px solid #F53855;
     border-radius: 50px;
     color: #F53855;
@@ -103,7 +106,7 @@ h6 {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.03em;
-	    margin-right: 157px;
+    margin-right: 157px;
 }
 
 .logo {
@@ -120,13 +123,13 @@ h6 {
 }
 
 .menu__item {
-	    font-weight: 400;
+    font-weight: 400;
     text-decoration: none;
     color: #4F5665;
 }
 
 .menu__item:not(:last-child) {
-	    letter-spacing: 0.06rem;
+    letter-spacing: 0.06rem;
     margin-right: 38px;
 }
 
@@ -138,7 +141,7 @@ h6 {
 .sign__in {
     font-size: 16px;
     line-height: 19px;
-	    margin-right: 32px;
+    margin-right: 32px;
 }
 
 /*section--hero*/
@@ -159,8 +162,8 @@ h6 {
 .section--hero .title {
     font-size: 50px;
     line-height: 70px;
-	    letter-spacing: 0.02em;
-		    text-align: left;
+    letter-spacing: 0.02em;
+    text-align: left;
     margin-bottom: 6px;
 
 }
@@ -191,14 +194,14 @@ h6 {
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 10px 50px #f6f6f6;
-/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
-	padding:0px;
+    /*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+    padding: 0px;
 }
 
 .col__item {
     display: flex;
     align-items: center;
-/*    margin-right: 20px;*/
+    /*    margin-right: 20px;*/
     height: 200px;
 }
 
@@ -333,7 +336,7 @@ h6 {
 
 .plan__icon-wraper {
     display: flex;
-	align-items: center;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -416,7 +419,7 @@ h6 {
 .section--customer .title {
     width: 448px;
     margin: 0 auto;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .section--customer .subtitle {
@@ -595,7 +598,7 @@ h6 {
 
 .section--subscribe .container {
     display: flex;
-	    align-items: center;
+    align-items: center;
     width: 1140px;
     background: #FFFFFF;
     border-radius: 10px;
@@ -610,11 +613,12 @@ h6 {
 }
 
 .section--subscribe .title {
-			text-align: left;
-	font-weight: 600;
-	margin-bottom: 20px;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 20px;
 
 }
+
 .section--subscribe .description {
     font-weight: 400;
     margin: 0;
@@ -638,7 +642,7 @@ h6 {
 }
 
 .footer__logo {
-	    display: flex;
+    display: flex;
     align-items: center;
 }
 
@@ -666,7 +670,7 @@ h6 {
 }
 
 .table__colume {
-	    display: flex;
+    display: flex;
     flex-direction: column;
 
 }
