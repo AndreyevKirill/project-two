@@ -2,14 +2,18 @@ body {
     --primary-background-color: #fefefe;
     --subtitle-width: 555px;
     --title-width: 383px;
+}
 
-    @font-face {
-        font-family: "Rubik";
-        font-style: normal;
-        font-weight: normal;
-        src: url("../fonts/Rubik-Regular.ttf") format("truetype");
-    }
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Rubik-Regular.ttf") format("truetype");
+}
 
+html,
+body {
+    font-family: "Rubik", "Arial", sans-serif;
 }
 
 .header,
@@ -50,9 +54,9 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 25px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     height: 60px;
-    padding: 0px 76px;
+    padding: 0px 78px;
     background: #f53838;
     border: transparent;
     border-radius: 10px;
@@ -62,7 +66,7 @@ body {
 .btn--outline {
     height: 45px;
     letter-spacing: 0.06em;
-    padding: 0px 43px;
+    padding: 0px 41px;
     border: 1px solid #f53855;
     border-radius: 50px;
     color: #f53855;
@@ -188,10 +192,16 @@ body {
 /*.slider__arrow-icon:hover {
     filter: invert(97%) sepia(1%) saturate(163%) hue-rotate(223deg) brightness(115%) contrast(100%);
 }*/
+
+
 /*Header*/
+.header {
+    padding: 45px 0px 88px;
+}
+
 .header .container {
     display: flex;
-    padding: 45px 0px;
+    /*   padding: 45px 0px;*/
 }
 
 .header__left {
@@ -216,9 +226,9 @@ body {
     height: 36px;
 }
 
-.menu {
+/*.menu {
     margin-right: 150px;
-}
+}*/
 
 .menu__item {
     font-weight: 400;
@@ -227,8 +237,8 @@ body {
 }
 
 .menu__item:not(:last-child) {
-    letter-spacing: 0.06rem;
-    margin-right: 38px;
+    /*    letter-spacing: 0.06rem;*/
+    margin-right: 36px;
 }
 
 .header__right {
@@ -239,7 +249,7 @@ body {
 .sign__in {
     font-size: 16px;
     line-height: 19px;
-    margin-right: 32px;
+    margin-right: 31px;
 }
 
 /*media header*/
@@ -264,7 +274,8 @@ body {
 
 @media (min-width: 576px) {
     .header .container {
-        padding: 15px 15px;
+        /*        padding: 15px 15px;
+*/
         justify-content: space-between;
     }
 
@@ -279,7 +290,8 @@ body {
     }
 
     .header .container {
-        padding: 40px 0px 54px 0px;
+        /*        padding: 40px 0px 54px 0px;
+  */
     }
 }
 
@@ -303,6 +315,7 @@ body {
 
 .section--hero .title {
     font-size: 50px;
+    font-weight: 600;
     line-height: 70px;
     letter-spacing: 0.02em;
     text-align: center;
@@ -381,7 +394,7 @@ body {
 
 @media (min-width: 1200px) {
     .section--hero {
-        padding: 26px 0px 76px 0px;
+        padding: 0px 0px 76px 0px;
     }
 
     .hero__left {
@@ -453,6 +466,7 @@ body {
     font-size: 25px;
     line-height: 30px;
     color: #0b132a;
+    margin: 0px 0px 4px;
 }
 
 .section--stats .description {
@@ -943,22 +957,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px;
 }
 
 .section--customer .title {
     width: 448px;
     margin: 0 auto;
     margin-bottom: 20px;
+    letter-spacing: 0.02em;
 }
 
 .section--customer .subtitle {
     margin-bottom: 60px;
     max-width: var(--subtitle-width);
-    ;
+    font-weight: 400;
+}
+
+.section--customer .slider {
+    margin-left: 167px;
 }
 
 .slider__slide {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 }
 
 .section--customer .slider__nav-item--active {
@@ -974,7 +994,6 @@ body {
 
 .slider__slide-message {
     display: flex;
-    margin-left: 130px;
 }
 
 .slider__item.comment {
@@ -982,7 +1001,7 @@ body {
     background: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 10px;
-    padding: 30px 0px;
+    padding: 28px 0px 16px;
 }
 
 .slider__item.comment:hover {
@@ -999,9 +1018,12 @@ body {
 }*/
 .comment__header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin: 0px 30px 4px;
+}
+
+.profile {
+    display: flex;
 }
 
 .comment__profile-logo {
@@ -1010,23 +1032,22 @@ body {
     margin-right: 21px;
 }
 
-.comment__profile-description {
-    margin-right: 108px;
-}
-
 .comment__author {
     font-weight: 600;
     font-size: 18px;
     line-height: 30px;
     color: #0b132a;
+    letter-spacing: 0.02em;
+    margin: 0px;
 }
 
 .comment__location {
-    margin: 0;
+    margin: -3px 0px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #4f5665;
+    letter-spacing: 0.03em;
 }
 
 .comment__rating {
@@ -1050,7 +1071,7 @@ body {
 .section--customer .description {
     font-weight: 400;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 30px;
     color: #0b132a;
     margin: 0px 30px;
 }
