@@ -950,14 +950,13 @@ body {
 /*customer*/
 .section--customer {
     background: #f6f6f6;
-    padding: 53px 0px 65px;
+    padding: 53px 0px 0px;
 }
 
 .section--customer .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
 }
 
 .section--customer .title {
@@ -1116,6 +1115,10 @@ body {
         margin: 0;
     }
 
+    .section--customer .slider {
+        margin: 0 auto;
+    }
+
     .section--customer .slider__nav {
         position: unset;
         display: flex;
@@ -1168,11 +1171,28 @@ body {
 
 }
 
-
-
-
 /*subscribe*/
-.section--subscribe {
+.subscribe {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    background-color: burlywood;
+    border-radius: 10px;
+    transform: translateY(50%);
+}
+
+.subscribe .title {
+    width: auto;
+    text-align: start;
+    line-height: 45px;
+    margin-bottom: 5px;
+}
+
+.subscribe__left .description {
+    margin: 0;
+}
+
+/*.section--subscribe {
     background: #f7f7f7;
 }
 
@@ -1183,15 +1203,15 @@ body {
     background: #ffffff;
     border-radius: 10px;
     padding-bottom: 15px;
-}
+}*/
 
-.subscribe__left {
+/*.subscribe__left {
     line-height: 45px;
     margin: 0;
     padding: 15px 0px;
-}
+}*/
 
-.section--subscribe .title {
+/*.section--subscribe .title {
     text-align: center;
     font-weight: 600;
     margin-bottom: 20px;
@@ -1201,6 +1221,11 @@ body {
     text-align: center;
     font-weight: 400;
     margin: 0;
+}*/
+
+.subscribe__right .btn--danger {
+    padding: 0px 65px;
+    margin-right: 70px;
 }
 
 /*media subscribe*/
@@ -1225,7 +1250,7 @@ body {
 
     .subscribe__left {
         width: 361px;
-        margin: 58px 340px 58px 70px;
+        margin: 54px 388px 54px 70px;
     }
 
     .section--subscribe .title {
