@@ -226,9 +226,31 @@ body {
     height: 36px;
 }
 
-/*.menu {
-    margin-right: 150px;
-}*/
+.menu-triger--active {
+    position: relative;
+    width: 28px;
+    height: 15px;
+    top: -6px;
+    display: none;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #f53855;
+    border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 20px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
 
 .menu__item {
     font-weight: 400;
@@ -252,6 +274,10 @@ body {
     margin-right: 31px;
 }
 
+.header .btn.btn--outline {
+    margin-right: 20px;
+}
+
 /*media header*/
 @media (max-width: 576px) {
     .header .container {
@@ -269,6 +295,10 @@ body {
 
     .logo__name {
         margin: 0px;
+    }
+
+    .menu-triger--active {
+        display: block;
     }
 }
 
@@ -826,7 +856,7 @@ body {
 /*global*/
 
 .section--global {
-    padding: 0px 0px 30px;
+    padding: 45px 0px 30px;
 }
 
 .section--global .container {
@@ -970,10 +1000,6 @@ body {
     margin-bottom: 60px;
     max-width: var(--subtitle-width);
     font-weight: 400;
-}
-
-.section--customer .slider {
-    margin-left: 167px;
 }
 
 .slider__slide {
@@ -1152,6 +1178,14 @@ body {
 }
 
 @media (min-width: 1400px) {
+    .section--customer .slider {
+        margin-left: 167px;
+    }
+
+    .section--customer .slider__nav {
+        justify-content: unset;
+    }
+
     .slider__nav-left {
         margin-right: 865px;
     }
@@ -1176,21 +1210,18 @@ body {
     display: flex;
     align-items: center;
     text-align: start;
-    background-color: burlywood;
+    background-color: #FFF;
     border-radius: 10px;
     transform: translateY(50%);
 }
 
-.subscribe .title {
+.subscribe__left .title {
     width: auto;
     text-align: start;
     line-height: 45px;
     margin-bottom: 5px;
 }
 
-.subscribe__left .description {
-    margin: 0;
-}
 
 /*.section--subscribe {
     background: #f7f7f7;
@@ -1230,31 +1261,91 @@ body {
 
 /*media subscribe*/
 @media (max-width: 576px) {
-    .section--subscribe .container {
+    .subscribe {
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .subscribe__left {
+        margin-bottom: 10px;
+    }
+
+    .subscribe .title {
+        text-align: center;
+    }
+
+    .subscribe .description {
+        text-align: center;
+    }
+
+    .btn--danger.btn--shadow {
+        margin: auto;
+    }
+
+    /*    .section--subscribe .container {
         flex-direction: column;
         width: auto;
         top: 0px;
     }
-
+*/
 
 }
 
+@media (min-width: 576px) {
+    .subscribe {
+        padding: 20px 10px 10px;
+    }
+
+    .subscribe__left {
+        text-align: center;
+    }
+
+    .subscribe .title {
+        text-align: center;
+    }
+
+    .subscribe__right .btn--danger {
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .subscribe__left {
+        margin: 20px 88px 10px 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .subscribe__left {
+        margin: 54px 298px 54px 70px;
+    }
+
+    .subscribe__left .title {
+        text-align: left;
+    }
+
+    .subscribe__left .description {
+        margin: 0;
+        text-align: left;
+    }
+}
+
 @media (min-width: 1200px) {
-    .section--subscribe .container {
+
+    /*    .section--subscribe .container {
         flex-direction: row;
         width: 1140px;
         padding-bottom: 0px;
         position: relative;
-        /*	top: 147px;*/
+       	top: 147px;
+    }*/
+    .subscribe {
+        width: 1140px;
     }
 
     .subscribe__left {
         width: 361px;
         margin: 54px 388px 54px 70px;
-    }
-
-    .section--subscribe .title {
-        text-align: left;
     }
 
     .section--subscribe .description {
@@ -1267,7 +1358,7 @@ body {
 /*footer*/
 .footer {
     background: #f8f8f8;
-    padding: 20px 0px 100px;
+    padding: 70px 0px 100px;
 }
 
 .footer .container {
@@ -1342,6 +1433,11 @@ body {
 
 /*media footer*/
 @media (max-width: 576px) {
+
+    .footer .container {
+        padding-top: 100px;
+    }
+
     .table__colume:not(:last-child) {
         margin-right: 0px;
     }
@@ -1350,6 +1446,25 @@ body {
         justify-content: space-between;
     }
 }
+
+@media (min-width: 576px) {
+    .footer {
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer {
+        padding-top: 140px;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer {
+        padding-top: 180px;
+    }
+}
+
 
 @media (min-width: 1200px) {
     .footer {
@@ -1367,6 +1482,7 @@ body {
         width: 340px;
         margin-right: 230px;
     }
+
 
     .footer__logo {
         align-items: unset;
