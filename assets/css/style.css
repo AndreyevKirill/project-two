@@ -196,7 +196,7 @@ body {
 
 /*Header*/
 .header {
-    padding: 45px 0px 88px;
+    padding: 41px 0px 107px;
 }
 
 .header .container {
@@ -317,11 +317,6 @@ body {
 @media (min-width: 1200px) {
     .menu {
         display: block;
-    }
-
-    .header .container {
-        /*        padding: 40px 0px 54px 0px;
-  */
     }
 }
 
@@ -787,7 +782,7 @@ body {
 /*media plan*/
 @media (max-width: 576px) {
     .section--plan .container {
-        padding: 20px 0px 30px 0px;
+        padding: 20px 15px 30px 15px;
     }
 
     .plan_table_col {
@@ -842,8 +837,7 @@ body {
         margin: 0;
     }
 
-    .plan_table_col:nth-of-type(2),
-    .plan_table_col:nth-of-type(3) {
+    .plan_table_col:nth-of-type(2) {
         display: flex;
     }
 
@@ -851,6 +845,12 @@ body {
         display: none;
     }
 
+}
+
+@media (min-width: 1200px) {
+    .plan_table_col:nth-of-type(3) {
+        display: flex;
+    }
 }
 
 /*global*/
@@ -980,7 +980,7 @@ body {
 /*customer*/
 .section--customer {
     background: #f6f6f6;
-    padding: 53px 0px 0px;
+    padding: 53px 0px 40px;
 }
 
 .section--customer .container {
@@ -1223,8 +1223,9 @@ body {
 }
 
 
-/*.section--subscribe {
-    background: #f7f7f7;
+.section--subscribe {
+    background: #f6f6f6;
+    position: relative;
 }
 
 .section--subscribe .container {
@@ -1234,15 +1235,31 @@ body {
     background: #ffffff;
     border-radius: 10px;
     padding-bottom: 15px;
-}*/
+}
 
-/*.subscribe__left {
+.section--subscribe .container {
+    z-index: 1;
+    position: relative;
+    background-color: wheat;
+}
+
+.section--subscribe::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #f8f8f8;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.subscribe__left {
     line-height: 45px;
     margin: 0;
     padding: 15px 0px;
-}*/
+}
 
-/*.section--subscribe .title {
+.section--subscribe .title {
     text-align: center;
     font-weight: 600;
     margin-bottom: 20px;
@@ -1252,7 +1269,7 @@ body {
     text-align: center;
     font-weight: 400;
     margin: 0;
-}*/
+}
 
 .subscribe__right .btn--danger {
     padding: 0px 65px;
@@ -1282,13 +1299,11 @@ body {
         margin: auto;
     }
 
-    /*    .section--subscribe .container {
+    .section--subscribe .container {
         flex-direction: column;
         width: auto;
         top: 0px;
     }
-*/
-
 }
 
 @media (min-width: 576px) {
@@ -1332,13 +1347,13 @@ body {
 
 @media (min-width: 1200px) {
 
-    /*    .section--subscribe .container {
+    .section--subscribe .container {
         flex-direction: row;
         width: 1140px;
         padding-bottom: 0px;
         position: relative;
-       	top: 147px;
-    }*/
+    }
+
     .subscribe {
         width: 1140px;
     }
