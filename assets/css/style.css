@@ -191,7 +191,6 @@ body {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(100%) contrast(101%);
 }
 
-
 /* белый 	
 filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(100%) contrast(101%);*/
 /* красный*/
@@ -248,8 +247,25 @@ filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-
     color: #4f5665;
 }
 
-a.menu__item.menu__item--active:hover {
+/*.menu__item.menu__item--active:hover {
     text-decoration-line: underline;
+}*/
+.menu__item:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.menu__item:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
 .menu__item:hover {
@@ -411,7 +427,7 @@ a.menu__item.menu__item--active:hover {
 }
 
 .hero__pic {
-    width: 21em;
+    max-width: 100%;
 }
 
 /*media hero*/
@@ -438,7 +454,7 @@ a.menu__item.menu__item--active:hover {
     }
 
     .hero__pic {
-        width: 25em;
+        max-width: 100%;
     }
 }
 
@@ -468,7 +484,7 @@ a.menu__item.menu__item--active:hover {
 
     .hero__pic {
         position: relative;
-        width: 26em;
+        max-width: 100%;
         top: 59px;
     }
 }
@@ -495,8 +511,8 @@ a.menu__item.menu__item--active:hover {
 
 @media (min-width: 1400px) {
     .hero__pic {
-        width: auto;
-        left: 66px;
+        max-width: fit-content;
+        left: 68px;
         top: 6px;
     }
 }
@@ -604,7 +620,7 @@ a.menu__item.menu__item--active:hover {
 
 @media (min-width: 768px) {
     .section--stats {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
     .section--stats .container {
@@ -818,7 +834,7 @@ a.menu__item.menu__item--active:hover {
     line-height: 30px;
     text-align: center;
     color: #0b132a;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 
 .section--plan .btn--outline-danger {
@@ -964,25 +980,25 @@ a.menu__item.menu__item--active:hover {
     }
 
     .global__pic {
-        width: 22em;
+        max-width: 100%;
     }
 }
 
 @media (min-width: 576px) {
     .global__pic {
-        width: 32em;
+        max-width: 100%;
     }
 }
 
 @media (min-width: 768px) {
     .global__pic {
-        width: 36em;
+        max-width: 100%;
     }
 }
 
 @media (min-width: 992px) {
     .global__pic {
-        width: 42em;
+        max-width: 100%;
     }
 }
 
@@ -992,7 +1008,7 @@ a.menu__item.menu__item--active:hover {
     }
 
     .global__pic {
-        width: auto;
+        max-width: 100%;
     }
 }
 
@@ -1561,16 +1577,16 @@ a.menu__item.menu__item--active:hover {
     }
 
     .footer__logo {
-        margin-bottom: 18px;
+        margin-bottom: 16px;
     }
 
     .footer .description {
         text-align: left;
-        margin: 0px 0px 30px 0px;
+        margin: 0px 0px 32px 0px;
     }
 
     .socials {
-        margin-bottom: 25px;
+        margin-bottom: 33px;
     }
 
     .copyright {
